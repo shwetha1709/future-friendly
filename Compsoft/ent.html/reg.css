@@ -1,0 +1,36 @@
+body{
+    background-image:url(su.jpg);
+    width: 250px;
+    margin: 100px auto;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    background-image:url(su.jpg);
+    background-size: 350px ;
+}
+div{
+
+    width: 500px;
+    margin: 100px ;
+    padding: 50px;
+    background-color:white;
+    border-top-left-radius:  25px;
+    border-bottom-right-radius: 25px;
+}
+button{
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    background: #ad85f2;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: 2px;
+
+  }
+
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Donation</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+	"width=device-width,initial-scale=1.0">
+
+	<!-- CSS only -->
+	<link href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+		integrity=
+"sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+		crossorigin="anonymous" rel="stylesheet">
+
+	<!-- Html2Pdf -->
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+		integrity=
+"sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+		crossorigin="anonymous">
+	</script>
+    <link rel="stylesheet" href="donation.css">
+</head>
+
+<body>
+	<h2 class="heading">
+	 Leaf-Now
+	</h2>
+
+	<!-- Form encrypted as text -->
+	<form id ="form-print" enctype="text/plain"
+		class="form-control">
+
+		<label class="xy" for="fname">
+		<strong>First Name: </strong>
+		</label>
+		<input class="form-control" type="text" style="width: 480px;"
+		id="fname" name="fName" placeholder="Enter First Name">
+		<br>
+        <label  class="xy" for="fname">
+            <strong>Last Name: </strong>
+            </label>
+            <input class="form-control" type="text" style="width: 480px;"
+            id="lname" name="lName" placeholder="Enter Last Name">
+            <br>
+       <label class="xy" for="age">
+		     <strong>Enter Age: </strong>
+		     </label>
+		     <input class="form-control" type="text" style="width: 480px;"
+		     id="age" name="Age" placeholder="Enter Age">
+		     <br>
+        <label class="xy"  for="mobile no">
+             <strong>Enter Mobile No: </strong>
+             </label>
+             <input class="form-control" type="text" style="width: 480px;"
+             id="mobile no" name="Mobile No" placeholder="Enter Mobile No">
+             <br>
+        <label class="xy" for="email">
+             <strong>Enter Email: </strong>
+             </label>
+             <input class="form-control" type="text" style="width: 480px;"
+             id="email" name="Email" placeholder="Enter Email">
+             <br>
+        <label class="xy" for="address">
+                <strong>Enter Address</strong>
+                 </label>
+                 <input class= "form-control" id="address" name="address" placeholder="Enter you Address" style="width: 480px">
+                <br>
+        <label  class="xy" for="Donation">
+                    <strong>Select: </strong>
+                    </label>
+                    <select class="form-control" id="donation" style="width: 480px" name="donation">
+                    <option value="Web">
+                             once
+                            </option>
+                            <option value="App">
+                                Every Month
+                            </option>
+                            <option value="App">
+                                Every Year
+                            </option>
+                            <option value="Others">
+                                Others
+                            </option>
+                    </select>
+                    <br>
+        <label class="xy" for="donation amount">
+                    <strong>Enter Donation Amount:</strong>
+                    </label>
+                    <input class="form-control" type="text" style="width: 480px;" id="donation amount" name="Donation Amount" placeholder="Enter Donation Amount">
+                    <br>
+        <label class="xy" for="donation details">
+                    <strong>Enter Donation Details</strong>
+                    </label>
+                    <textarea class= "form-control"
+                    id="donation details" name="donation details" placeholder="Enter Donation Details:" style="width: 480px">
+                    </textarea>
+                    <br>
+	    <label class="xy" for="message">
+		        <strong>Enter Message </strong>
+		       </label>
+		       <textarea class= "form-control" id="message" name="message" placeholder="Enter you message" style="width: 480px">
+		      </textarea>
+		      <br>
+
+		     <input type="button" class="btn" style="width: 480px"
+		    onclick="GeneratePdf();" value="GeneratePdf">
+	</form>
+				
+	<script>		
+		// Function to GeneratePdf
+		function GeneratePdf() {
+			var element = document.getElementById('form-print');
+			html2pdf(element);
+		}
+	</script>
+
+	<script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity=
+"sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

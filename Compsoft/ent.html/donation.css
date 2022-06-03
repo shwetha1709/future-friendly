@@ -1,0 +1,45 @@
+*{	width: 100%;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+    justify-content: center; 
+
+    }
+    
+body{
+    width: 570px;
+    margin: 100px;
+    padding: 30px;
+    border-radius:25px;
+    background-image:url(don4.jpg); 
+    background-size: cover; 
+
+}
+
+.heading{
+		text-align: center;
+		color: #176e08;
+        font-size: 50px;
+        font-style: oblique;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+		}
+
+      
+.form-control{
+        
+           align-items: center;
+           border-radius: 25px;
+           background-image: linear-gradient(to right,white,#ffcba4);
+           
+       }
+        
+.xy{
+		text-align: left;
+		color: #525249;
+        font-size: medium;
+		}
+        
+.btn{
+            text-align:center;
+		background-color:#ace1af;
+        }

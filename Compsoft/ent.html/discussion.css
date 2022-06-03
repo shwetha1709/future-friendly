@@ -1,0 +1,55 @@
+.heading1{
+   font-weight: bold;
+   font-stretch: expanded;
+   font-family:'Times New Roman', Times, serif;
+   color:floralwhite;
+   text-transform:capitalize;
+   text-decoration: underline;
+}
+.input[type="text"]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  size: 100%;
+}
+.label1{
+   font-style: bold;
+   font-style: italic;
+   width: auto;
+   color:rgb(9, 255, 128);
+}
+.label2{
+   font-style: bold;
+   font-style: italic;
+   width: auto;
+   color:rgb(9, 255, 128);
+}
+input[type=submit] {
+   background-color:rgb(237, 86, 63);
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+input[type=submit]:hover{
+   color: white;
+   background-color: #4CAF50;
+}
+body {
+   background-image: url("discussion.jpg");
+   opacity:0.9;
+   display:grid;
+   position: relative;
+   align-items: center;
+   background-position:center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.box{
+   margin:0 auto; 
+   width:600px;
+   padding:20px;
+   background-image:url("discussion_image.jpg");
+   }
